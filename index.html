@@ -14,28 +14,29 @@
 </head>
 
 <body>
-    <div class="container">
-        <form action="">
-            <h1>Login</h1>
+    <main class="container">
+        <h2 class="hidden-title">Login form</h2>
+        <form action="" aria-labelledby="login-title">
+            <h1 id="login-title">Login</h1>
             <div class="input-container">
-                <input type="email" placeholder="Email" required>
-                <img width="22" height="22" src="https://img.icons8.com/ios-glyphs/30/user--v1.png" alt="user--v1" />
+                <input type="email" id="email" name="email" placeholder="Email" required aria-required="true">
+                <img width="22" height="22" src="https://img.icons8.com/ios-glyphs/30/user--v1.png" alt="User icon" />
             </div>
             <div class="input-container">
-                <input type="password" placeholder="password" required>
-                <img width="20" height="20" color="white" src="https://img.icons8.com/material-outlined/24/lock--v1.png"
-                    alt="lock--v1" />
-                <a href="#">Forgot my password</a>
+                <input type="password" id="password" name="password" placeholder="Password" required aria-required="true">
+                <img width="20" height="20" src="https://img.icons8.com/material-outlined/24/lock--v1.png" alt="Lock icon" />
+                <a href="#">Forgot my password?</a>
             </div>
 
             <button type="submit" class="submit-button">Login</button>
 
             <div class="register-link">
-                <p>Not registered? <a href="#"> Sign up</a></p>
+                <p>Not registered? <a href="#">Sign up</a></p>
             </div>
         </form>
-    </div>
+    </main>
 </body>
+
 <script src="script.js"></script>
 
 </html>
